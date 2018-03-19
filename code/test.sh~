@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#La siugiente linea ejecuta el comando which
+which useradd

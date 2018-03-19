@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Introducci&oacute;n a la programaci&oacute;n en BASH</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="css/impress-demo.css" rel="stylesheet" />
+	</head>
+	<body class="impress-not-supported">
+		<div class="fallback-message">
+			<p>Tu navegador <b>no soporta las caracter&iacute;sticas requeridas</b> para esta presentaci&oacute;n, por lo que se mostrar&aacute; una versi&oacute;n simplificada</p>
+			<p>Para una mejor experienciautiliza la &uacute;ltima versi&oacute;n de navegador web<b>Mozilla Firefox</b>.</p>
+		</div>
+
+		<div id="impress">
+			<div id="titulo" class="step" data-scale="4" data-x="0" data-y="0" data-z="3000">
+					  <!--<img src="imagen/logoUTCV.jpg" align="RIGHT"/>-->
+				<p style="font-size:70px; font-weight:bold; color:white">Introducci&oacute;n a la programaci&oacute;n en BASH</p>
+				<img src="imagen/terminal.png"/>
+				</br>
+				</br>
+				<p style="font-size:50px; color:white">Por: Ing. Victor J. Mej&iacute;a Lara</p>
+				<p style="font-size:30px; color:white">Universidad Tecnol&oacute;gica del Centro de Veracruz</p>
+			</div>
+
+			<div id="shell" class="step slide" data-z="1500">
+				<h2>Descripci&oacute;n</h2>
+				</br></br>
+				<p style="font-size:34px">Es un shell de UNIX escrito por el proyecto GNU. Su nombre es un acr&oacute;nimo de 
+			  	<b>b</b>ourne-<b>a</b>gain <b>sh</b>ell; haciendo un juego de palabras (bourn again - renacimiento) sobre el Bourne Shell, que fue 
+				uno de los primeros shells importantes de UNIX.<br/><br/>
+				BASH es el SHELL por defecto en la mayor&iacute;a de los GNU/Linux y puede ejecutarse en la mayor&iacute;a de los sistemas operativos
+				tipo UNIX.
+				<p>
+			</div>
+
+			<div id="historia" class="step slide" data-z="0" data-rotate="180">
+				<h1 align="center">Histor&iacute;a</h1></br>
+				<p style="font-size:34px">
+				<li>1978 - el shell Bourne era el shell distribuido en UNIX versi&oacute;n 7 y Stepehn Bourne escribi&oacute; el shell Bourne.</li></br>
+				<li>1987 - Brian Fox escribi&oacute; el shel bash.</li></br>
+				<li>1990 - Chet Ramey se convirti&oacute; en su principal desarrollador.</li></br>
+				</p>
+			</div>
+
+			<div id="estructura" class="step slide" data-x="1600" data-z="0">
+				<h1 align="center">Estructura del script</h1>
+				<img src="imagen/cuerpo.png" width="800">
+				</br>
+				<quota>Ejemplo</quota>
+				<br>
+				<img src="imagen/codigo.png" width="800">
+			</div>
+
+			<div id="ejecucion" class="step slide" data-x="2600" data-z="0">
+				<h1 align="center">Ejecuci&oacute;n del script</h1>
+				<p>Desde l&iacute;nea de comandos.</p>
+				<quota><b>sh </b><i>./test.sh</i></quota>
+				<p>Dando permisos de ejecuci&oacute;n.</p>
+				<quota><b>chmod </b>u+x <i>./test.sh</i></quota>
+				<br><br>
+				<img src="imagen/ejecucion.png" height="200" width="800">
+			</div>
+
+			<div id="ejemplo" class="step slide" data-x="3600" data-z="0">
+				<div class="slide-header1">Ejemplo</div>
+				<div class="slide-content">
+					<br/>
+					<img src="imagen/ejemplo.png" align="center">
+				</div>
+			</div>
+
+			<div id="variables" class="step slide" data-x="4600" data-z="0">
+				<div class="slide-header1">Variables</div>
+				<div class="slide-content">
+					<br/>
+					<p>Es un apuntador a un dato actual. Las variables pueden almacenar datos de tipo n&uacute;merico, texto, archivo, dispositivo o cualquier otro.</p><br/>
+					<p>Las variables deben de empezar con caracter o subrayado. Por convenci&oacute;n las variables en *NIX deben de ser en may&uacute;sculas</p>
+				</div>
+			</div>
+
+			<div id="tipos" class="step slide" data-x="1600" data-y="800"  data-z="0">
+				<div class="slide-header2">Tipo de variables</div>
+				<div class="slide-content">
+					<br/>
+					<li>Locales.</li><br/>
+					<li>Entorno.</li><br/>
+					<li>Shell.</li>
+				</div>
+			</div>
+
+			<div id="ejemplovariables" class="step slide" data-x="2600" data-y="800" data-z="0">
+				<div class="slide-header">Ejemplo con entorno de variables</div>
+				<div class="slide-content">
+					<img src="imagen/ejemploVariable.png" height="95%" align="center">
+				</div>
+			</div>
+
+			<div id="practico" class="step slide" data-x="3600" data-y="800" data-z="0">
+				<div class="slide-header">Ejemplo pr&aacute;ctico con bash</div>
+				<div class="slide-content">
+					<p>Se desea obtener el tiempo de respuesta de un equipo para generar estad&iacute;stica de tiempo de respuestas.</p><br/><br/>
+					<p><b>El conjunto de comandos posiblemente a usar es: </b></p><br/>
+					<p><b>ping </b>-c 1 <i>127.0.0.1</i> | <b>head </b> -2 | <b>tail </b> -1 | <b>cut </b>-d '=' -f4 | <b>cut </b> -d ' ' -f1</b><br/><br/>
+		 			<img src="imagen/monitor.png">
+		 		</div>
+			</div>
+			
+			<div id="practico2" class="step slide" data-x="4600" data-y="800" data-z="0">
+				<p><b>Monitor modificado</b></p><br/><br/>
+				<img src="imagen/monitor2.png">
+			</div>
+
+			<div id="otroEjemplo" class="step" data-x="1600" data-y="1600" data-z="0">
+				<img src="imagen/captureDesktop.png" width="1200">
+			</div>
+
+			<div id="preguntas" class="step" data-x="0" data-y="-900" data-z="0">
+	 			<p align="center" style="font-size: 82px; color:white"><b>Preguntas</b></p>
+			</div>
+
+			<div id="Gracias" class="step" data-x="0" data-y="-1400" data-z="1200" data-rotate-y="-90">
+				<p align="center" style="font-size: 52px; color:white"><b>Gracias</b></p>
+				<p style="font-size: 32px; color:white"><br/><br/><b>Ing. Victor J. Mej&iacute;a Lara</b></p>
+				<p style="font-size: 32px; color:white">email: victor@integraci.com.mx</p>
+				<p style="font-size: 32px; color:white">web: www.integraci.com.mx/bash/</p>
+				<img src="imagen/slackware.png" align="left">
+	 		</div>
+		</div>
+		<script type="text/javascript" src="js/impress.js"></script>
+		<script>impress().init();</script>
+	</body>
+</html>
